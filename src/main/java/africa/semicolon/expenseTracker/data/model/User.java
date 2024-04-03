@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -15,5 +17,5 @@ public class User {
     private String name;
     private String email;
     @DBRef
-    private ExpenseCategory expenseCategory;
+    private List<ExpenseCategory> expenseCategory;
 }
