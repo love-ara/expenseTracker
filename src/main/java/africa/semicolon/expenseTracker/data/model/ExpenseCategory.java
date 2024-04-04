@@ -11,6 +11,5 @@ public class ExpenseCategory {
     @Id
     private String id;
     private String categoryName;
-    @DBRef
-    private User user;
+
 }
