@@ -16,6 +16,5 @@ public class User {
     private String id;
     private String name;
     private String email;
-    @DBRef
-    private List<ExpenseCategory> expenseCategory;
+
 }
