@@ -5,15 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05a86a36-79b4-40b8-8a4a-ec1f6945d94c" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/request/ExpenseRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/request/UpdateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/response/UpdateResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/service/ExpenseCategoryServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/expenseTracker/service/ExpenseCategoryServiceImpTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/expenseTracker/service/UserServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/data/model/IncomeCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/request/CreateExpenseRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/response/CreateExpenseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/response/RegisterResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/service/ExpenseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/service/ExpenseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/utils/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/expenseTracker/service/ExpenseServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_3_2024_9_40_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_3_2024_9_40_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/controller/ExpenseCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/controller/ExpenseCategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/data/model/Expense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/data/model/Expense.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/data/model/Income.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/data/model/Income.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/data/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/data/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/data/repository/ExpenseCategoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/request/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/request/RegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/service/ExpenseCategoryServiceImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/africa/semicolon/expenseTracker/service/ExpenseCategoryServiceImpTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +34,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -42,39 +53,41 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2eb7vYRKOKDqLhQLvlYjn9PLyBU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.ExpenseTracker.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ExpenseTracker.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="africa.semicolon.expenseTracker.dto.request" />
       <recent name="africa.semicolon.expenseTracker.dto.response" />
+      <recent name="africa.semicolon.expenseTracker.dto.request" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -113,7 +126,10 @@
       <updated>1712161658069</updated>
       <workItem from="1712161659279" duration="797000" />
       <workItem from="1712162485746" duration="590000" />
-      <workItem from="1712170986208" duration="14740000" />
+      <workItem from="1712170986208" duration="15014000" />
+      <workItem from="1713015494780" duration="345000" />
+      <workItem from="1713016919237" duration="1580000" />
+      <workItem from="1713030842118" duration="1635000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -347,7 +363,103 @@
       <option name="project" value="LOCAL" />
       <updated>1712294620142</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="commit">
+      <option name="closed" value="true" />
+      <created>1712295027333</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1712295027333</updated>
+    </task>
+    <task id="LOCAL-00031" summary="commit">
+      <option name="closed" value="true" />
+      <created>1712295051604</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1712295051604</updated>
+    </task>
+    <task id="LOCAL-00032" summary="commit">
+      <option name="closed" value="true" />
+      <created>1712295090656</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1712295090656</updated>
+    </task>
+    <task id="LOCAL-00033" summary="commit">
+      <option name="closed" value="true" />
+      <created>1712295113868</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1712295113868</updated>
+    </task>
+    <task id="LOCAL-00034" summary="commit">
+      <option name="closed" value="true" />
+      <created>1712295132997</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1712295132997</updated>
+    </task>
+    <task id="LOCAL-00035" summary="commit">
+      <option name="closed" value="true" />
+      <created>1712295149785</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1712295149785</updated>
+    </task>
+    <task id="LOCAL-00036" summary="commit">
+      <option name="closed" value="true" />
+      <created>1712295179161</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1712295179161</updated>
+    </task>
+    <task id="LOCAL-00037" summary="commit">
+      <option name="closed" value="true" />
+      <created>1712295198425</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1712295198425</updated>
+    </task>
+    <task id="LOCAL-00038" summary="commit">
+      <option name="closed" value="true" />
+      <created>1712295219286</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1712295219286</updated>
+    </task>
+    <task id="LOCAL-00039" summary="commit">
+      <option name="closed" value="true" />
+      <created>1712295236455</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1712295236455</updated>
+    </task>
+    <task id="LOCAL-00040" summary="commit">
+      <option name="closed" value="true" />
+      <created>1713017551154</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1713017551154</updated>
+    </task>
+    <task id="LOCAL-00041" summary="commit">
+      <option name="closed" value="true" />
+      <created>1713017564911</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1713017564911</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

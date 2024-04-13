@@ -1,7 +1,7 @@
 package africa.semicolon.expenseTracker.controller;
 
 import africa.semicolon.expenseTracker.data.model.ExpenseCategory;
-import africa.semicolon.expenseTracker.data.repository.ExpenseCategoryRepository;
+import africa.semicolon.expenseTracker.data.repository.ExpenseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +17,7 @@ import java.util.Optional;
 @RequestMapping("/api")
 public class ExpenseCategoryController {
     @Autowired
-    private ExpenseCategoryRepository expenseCategoryRepository;
+    private ExpenseRepository expenseCategoryRepository;
 
     @GetMapping("/category")
     public ResponseEntity<List<ExpenseCategory>> getAllExpenses(){
@@ -35,8 +35,8 @@ public class ExpenseCategoryController {
     }
     @PutMapping("/category/{id}")
     public ResponseEntity<ExpenseCategory> updateExpenseCategory(@Validated @RequestBody ExpenseCategory expenseCategory){
-        ExpenseCategory result = expenseCategoryRepository.save(expenseCategory);
-        return ResponseEntity.ok().body(result);
+        //ExpenseCategory result = expenseCategoryRepository.save(expenseCategory);
+        //return ResponseEntity.ok().body(result);
     }
     @DeleteMapping("/category/{id}")
     public ResponseEntity<?> deleteExpenseCategory(@PathVariable String id){
