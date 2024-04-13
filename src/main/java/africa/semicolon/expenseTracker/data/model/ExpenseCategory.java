@@ -1,17 +1,22 @@
 package africa.semicolon.expenseTracker.data.model;
 
-import lombok.Data;
-import lombok.NonNull;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.DBRef;
+import lombok.Getter;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Data
+@Getter
 @Document("Category")
-public class ExpenseCategory {
-    @Id
-    private String id;
-    @NonNull
-    private String categoryName;
+public enum ExpenseCategory {
+    CLOTHING("name"),
+    FOOD("name"),
+    TRAVEL("name"),
+    SELFCARE("name"),
+    EMERGENCY("name"),
+    OTHER("name");
+
+    private final String name;
+
+    ExpenseCategory(String name) {
+        this.name = name;
+    }
 
 }
