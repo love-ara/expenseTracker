@@ -52,7 +52,7 @@ public class ExpenseServiceImplTest {
 
         CreateExpenseRequest createExpenseRequest = new CreateExpenseRequest();
         createExpenseRequest.setDescription("Test Description");
-        createExpenseRequest.setExpenseCategory(ExpenseCategory.CLOTHING);
+        createExpenseRequest.setExpenseCategory(ExpenseCategory.CLOTHING.name());
         createExpenseRequest.setAmount(500.00);
         createExpenseRequest.setUsername("Ara");
         expenseService.createExpense(createExpenseRequest);

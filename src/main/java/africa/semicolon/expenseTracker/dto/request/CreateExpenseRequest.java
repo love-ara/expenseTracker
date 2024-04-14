@@ -9,7 +9,7 @@ public class CreateExpenseRequest {
     private String username;
     private String description;
     private Double amount;
-    private ExpenseCategory expenseCategory;
+    private String expenseCategory;
     private String expenseDate;
 
 }

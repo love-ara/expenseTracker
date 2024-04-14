@@ -5,6 +5,7 @@ import africa.semicolon.expenseTracker.data.model.User;
 import africa.semicolon.expenseTracker.data.repository.UserRepository;
 import africa.semicolon.expenseTracker.dto.request.*;
 import africa.semicolon.expenseTracker.dto.response.*;
+import africa.semicolon.expenseTracker.exceptions.ExpenseNotFoundException;
 import africa.semicolon.expenseTracker.exceptions.IncorrectPasswordException;
 import africa.semicolon.expenseTracker.exceptions.UserAlreadyExistException;
 import africa.semicolon.expenseTracker.exceptions.UserNotFoundException;
@@ -19,6 +20,7 @@ import static africa.semicolon.expenseTracker.utils.Mapper.*;
 @AllArgsConstructor
 public class UserServiceImpl implements UserService {
     private UserRepository userRepository;
+    private ExpenseService expenseService;
 
 
     @Override
@@ -66,13 +68,27 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Expense addToExpenseList(ExpenseRequest expenseRequest) {
-        return null;
+    public CreateExpenseResponse addNewExpense(CreateExpenseRequest expenseRequest) {
+        User user = getUser(expenseRequest.getUsername());
+        var expense = expenseService.createExpense(expenseRequest);
+        CreateExpenseResponse createExpenseResponse = mapper(expenseRequest);
+        user.getExpenses().add(expense);
+        userRepository.save(user);
+        return createExpenseResponse;
     }
 
     @Override
     public DeleteResponse deleteFromExpenseList(DeleteRequest deleteRequest) {
-        return null;
+        User user = getUser(deleteRequest.getUsername());
+        Expense expense = findExpense(deleteRequest.getId(), user.getExpenses());
+        user.getExpenses().remove(expense);
+        userRepository.save(user);
+        return expenseService.deleteExpense(deleteRequest);
+    }
+
+    private Expense findExpense(String id, List<Expense> expenses) {
+        for (Expense expense : expenses) if (expense.getId().equals(id)) return expense;
+        throw new ExpenseNotFoundException("Expense not found");
     }
 
     @Override

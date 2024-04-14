@@ -12,7 +12,7 @@ public interface UserService {
     RegisterResponse registerUser(RegisterRequest registerRequest);
     LoginResponse loginUser(LoginRequest loginRequest);
     LogoutResponse logoutUser(LogoutRequest logoutRequest);
-    Expense addToExpenseList(ExpenseRequest expenseRequest);
+    CreateExpenseResponse addNewExpense(CreateExpenseRequest expenseRequest);
     DeleteResponse deleteFromExpenseList(DeleteRequest deleteRequest);
     UpdateResponse updateExpenseList(UpdateRequest updateRequest);
     Expense getExpense(String id);

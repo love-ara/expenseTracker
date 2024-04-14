@@ -7,31 +7,22 @@
     <list default="true" id="05a86a36-79b4-40b8-8a4a-ec1f6945d94c" name="Changes" comment="commit">
       <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/data/model/Bill.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/data/model/Budget.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/request/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/request/LogoutRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/response/LoginResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/response/LogoutResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/exceptions/ExpenseTrackerExceptions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/exceptions/IncorrectPasswordException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/exceptions/UserAlreadyExistException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/exceptions/UserNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/exceptions/UsernameNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/expenseTracker/service/ExpenseServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/exceptions/ExpenseNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/ExpenseTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/ExpenseTracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/controller/ExpenseCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/controller/ExpenseCategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/data/model/Expense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/data/model/Expense.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/data/model/ExpenseCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/data/model/ExpenseCategory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/data/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/data/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/data/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/data/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/request/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/request/RegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/request/CreateExpenseRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/request/CreateExpenseRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/request/DeleteRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/request/DeleteRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/request/ExpenseRequest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/response/CreateExpenseResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/response/CreateExpenseResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/service/ExpenseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/service/ExpenseService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/service/ExpenseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/service/ExpenseServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/utils/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/utils/Mapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/africa/semicolon/expenseTracker/service/ExpenseServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/africa/semicolon/expenseTracker/service/ExpenseServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/expenseTracker/service/ExpenseServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/africa/semicolon/expenseTracker/service/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/expenseTracker/service/UserServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +67,9 @@
     "JUnit.ExpenseServiceTest.createAnExpenseTest.executor": "Run",
     "JUnit.ExpenseServiceTest.executor": "Run",
     "JUnit.UserServiceImplTest.RegisterUserTest.executor": "Run",
+    "JUnit.UserServiceImplTest.deleteFromExpenseList.executor": "Run",
     "JUnit.UserServiceImplTest.executor": "Run",
+    "JUnit.UserServiceImplTest.userCanLogExpenseTest.executor": "Run",
     "JUnit.UserServiceImplTest.userLoginTest.executor": "Run",
     "JUnit.UserServiceImplTest.userLogoutTest.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -103,8 +96,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="africa.semicolon.expenseTracker.dto.request" />
       <recent name="africa.semicolon.expenseTracker.exceptions" />
+      <recent name="africa.semicolon.expenseTracker.dto.request" />
       <recent name="africa.semicolon.expenseTracker.dto.response" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -117,23 +110,7 @@
       <recent name="africa.semicolon.expenseTracker.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceImplTest.userLoginTest">
-    <configuration name="ExpenseServiceImplTest.createAnExpenseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="expenseTracker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="africa.semicolon.expenseTracker.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="africa.semicolon.expenseTracker.service" />
-      <option name="MAIN_CLASS_NAME" value="africa.semicolon.expenseTracker.service.ExpenseServiceImplTest" />
-      <option name="METHOD_NAME" value="createAnExpenseTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserServiceImplTest.deleteFromExpenseList">
     <configuration name="UserServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="expenseTracker" />
       <extension name="coverage">
@@ -149,7 +126,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceImplTest.RegisterUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceImplTest.deleteFromExpenseList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="expenseTracker" />
       <extension name="coverage">
         <pattern>
@@ -159,7 +136,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="africa.semicolon.expenseTracker.service" />
       <option name="MAIN_CLASS_NAME" value="africa.semicolon.expenseTracker.service.UserServiceImplTest" />
-      <option name="METHOD_NAME" value="RegisterUserTest" />
+      <option name="METHOD_NAME" value="deleteFromExpenseList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest.userCanLogExpenseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="expenseTracker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="africa.semicolon.expenseTracker.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="africa.semicolon.expenseTracker.service" />
+      <option name="MAIN_CLASS_NAME" value="africa.semicolon.expenseTracker.service.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="userCanLogExpenseTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -181,29 +174,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceImplTest.userLogoutTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExpenseTracker" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="expenseTracker" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="africa.semicolon.expenseTracker.ExpenseTracker" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="africa.semicolon.expenseTracker.service.*" />
+          <option name="PATTERN" value="africa.semicolon.expenseTracker.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="africa.semicolon.expenseTracker.service" />
-      <option name="MAIN_CLASS_NAME" value="africa.semicolon.expenseTracker.service.UserServiceImplTest" />
-      <option name="METHOD_NAME" value="userLogoutTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserServiceImplTest.userLoginTest" />
-        <item itemvalue="JUnit.UserServiceImplTest.userLogoutTest" />
-        <item itemvalue="JUnit.UserServiceImplTest.RegisterUserTest" />
+        <item itemvalue="JUnit.UserServiceImplTest.deleteFromExpenseList" />
+        <item itemvalue="Spring Boot.ExpenseTracker" />
         <item itemvalue="JUnit.UserServiceImplTest" />
-        <item itemvalue="JUnit.ExpenseServiceImplTest.createAnExpenseTest" />
+        <item itemvalue="JUnit.UserServiceImplTest.userCanLogExpenseTest" />
+        <item itemvalue="JUnit.UserServiceImplTest.userLoginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -223,6 +213,7 @@
       <workItem from="1713030842118" duration="4102000" />
       <workItem from="1713080890267" duration="7200000" />
       <workItem from="1713088125968" duration="7710000" />
+      <workItem from="1713107116535" duration="9618000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -560,7 +551,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713032595751</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="commit">
+      <option name="closed" value="true" />
+      <created>1713107157527</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1713107157527</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

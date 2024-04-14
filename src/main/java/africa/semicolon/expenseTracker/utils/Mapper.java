@@ -3,10 +3,7 @@ package africa.semicolon.expenseTracker.utils;
 import africa.semicolon.expenseTracker.data.model.Expense;
 import africa.semicolon.expenseTracker.data.model.User;
 import africa.semicolon.expenseTracker.dto.request.*;
-import africa.semicolon.expenseTracker.dto.response.CreateExpenseResponse;
-import africa.semicolon.expenseTracker.dto.response.LoginResponse;
-import africa.semicolon.expenseTracker.dto.response.LogoutResponse;
-import africa.semicolon.expenseTracker.dto.response.RegisterResponse;
+import africa.semicolon.expenseTracker.dto.response.*;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -41,16 +38,17 @@ public class Mapper {
     public static Expense expenseMap(CreateExpenseRequest addExpenseRequest, User user) {
         Expense expense = new Expense();
         expense.setDescription(addExpenseRequest.getDescription());
-        expense.setExpenseCategory(addExpenseRequest.getExpenseCategory());
+        //expense.setExpenseCategory(addExpenseRequest.getExpenseCategory());
         expense.setAmount(addExpenseRequest.getAmount());
         expense.setUser(user);
+        //expense.setExpenseCategory(user.getExpenses().getFirst().getExpenseCategory());
         return expense;
     }
     public static CreateExpenseResponse expenseResponse(Expense expense) {
         CreateExpenseResponse createExpenseResponse = new CreateExpenseResponse();
         createExpenseResponse.setExpenseId(expense.getId());
         createExpenseResponse.setDescription(expense.getDescription());
-        createExpenseResponse.setExpenseCategory(expense.getExpenseCategory());
+        //createExpenseResponse.setExpenseCategory(expense.getExpenseCategory().name());
         createExpenseResponse.setAmount(expense.getAmount());
         createExpenseResponse.setExpenseTime(DateTimeFormatter.ofPattern("dd-MM-yyyy")
                 .format(expense.getExpenseDate()));
@@ -68,5 +66,11 @@ public class Mapper {
         LogoutResponse logoutResponse = new LogoutResponse();
         logoutResponse.setId(logoutRequest.getUsername());
         return logoutResponse;
+    }
+
+    public static DeleteResponse deleteMap(DeleteRequest deleteRequest){
+        DeleteResponse deleteResponse = new DeleteResponse();
+        deleteResponse.setId(deleteRequest.getId());
+        return deleteResponse;
     }
 }
