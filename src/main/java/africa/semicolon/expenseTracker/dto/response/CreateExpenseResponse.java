@@ -10,5 +10,6 @@ public class CreateExpenseResponse {
     private String description;
     private Double amount;
     private ExpenseCategory expenseCategory;
+    private String ExpenseTime;
     //private String response;
 }
