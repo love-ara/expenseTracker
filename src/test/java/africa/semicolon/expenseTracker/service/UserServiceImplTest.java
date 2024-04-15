@@ -150,17 +150,4 @@ public class UserServiceImplTest {
         assertThat(expenseRepository.count(), is(0L));
     }
 
-    @Test
-    public void updateExpenseList() {
-    }
-
-    @Test
-    public void getExpense() {
-
-    }
-
-    @Test
-    public void getExpenses() {
-
-    }
 }
