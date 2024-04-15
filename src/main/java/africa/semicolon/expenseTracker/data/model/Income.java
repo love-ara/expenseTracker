@@ -13,9 +13,9 @@ public class Income {
     private String incomeName;
     private String incomeDescription;
     private String incomeAmount;
-    @DBRef
     private IncomeCategory incomeType;
     private String incomeDate;
-
+    @DBRef
+    private User user;
 
 }
