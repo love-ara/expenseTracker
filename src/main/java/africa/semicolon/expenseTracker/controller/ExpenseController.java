@@ -1,7 +1,6 @@
 package africa.semicolon.expenseTracker.controller;
 
 import africa.semicolon.expenseTracker.data.model.Expense;
-import africa.semicolon.expenseTracker.data.model.ExpenseCategory;
 import africa.semicolon.expenseTracker.data.repository.ExpenseRepository;
 import africa.semicolon.expenseTracker.dto.request.CreateExpenseRequest;
 import africa.semicolon.expenseTracker.dto.request.DeleteRequest;
@@ -12,11 +11,9 @@ import africa.semicolon.expenseTracker.exceptions.ExpenseNotFoundException;
 import africa.semicolon.expenseTracker.service.ExpenseService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import java.net.URI;
-import java.net.URISyntaxException;
+
 import java.util.List;
 
 import static org.springframework.http.HttpStatus.BAD_REQUEST;
@@ -42,11 +39,7 @@ public class ExpenseController {
             return new ResponseEntity<>(new ApiResponse(false, e.getMessage()), BAD_REQUEST);
         }
     }
-//    @PostMapping("/category")
-//    public ResponseEntity<?> createExpenses(@Validated @RequestBody ExpenseCategory expenseCategory) throws URISyntaxException {
-//            ExpenseCategory result = expenseRepository.save(expenseCategory);
-//            return ResponseEntity.created(new URI("/api/category" + result.getId())).body(result);
-//    }
+
     @PostMapping("/update")
     public ResponseEntity<?> updateExpense(@RequestBody UpdateRequest updateRequest){
         try {

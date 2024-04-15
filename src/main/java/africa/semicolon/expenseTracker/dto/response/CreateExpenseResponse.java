@@ -1,6 +1,5 @@
 package africa.semicolon.expenseTracker.dto.response;
 
-import africa.semicolon.expenseTracker.data.model.ExpenseCategory;
 import lombok.Data;
 
 @Data

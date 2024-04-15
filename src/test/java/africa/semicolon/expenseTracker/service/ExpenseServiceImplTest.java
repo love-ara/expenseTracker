@@ -1,6 +1,5 @@
 package africa.semicolon.expenseTracker.service;
 
-import africa.semicolon.expenseTracker.data.model.Expense;
 import africa.semicolon.expenseTracker.data.model.ExpenseCategory;
 import africa.semicolon.expenseTracker.data.repository.ExpenseRepository;
 import africa.semicolon.expenseTracker.data.repository.UserRepository;
@@ -16,7 +15,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
-import static org.junit.jupiter.api.Assertions.*;
+
 @SpringBootTest
 public class ExpenseServiceImplTest {
     private ExpenseService expenseService;

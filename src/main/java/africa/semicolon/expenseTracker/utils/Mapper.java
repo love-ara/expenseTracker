@@ -5,9 +5,7 @@ import africa.semicolon.expenseTracker.data.model.ExpenseCategory;
 import africa.semicolon.expenseTracker.data.model.User;
 import africa.semicolon.expenseTracker.dto.request.*;
 import africa.semicolon.expenseTracker.dto.response.*;
-import africa.semicolon.expenseTracker.exceptions.ExpenseAlreadyExist;
 
-import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class Mapper {
