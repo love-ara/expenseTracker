@@ -4,8 +4,11 @@ import africa.semicolon.expenseTracker.data.model.Expense;
 import africa.semicolon.expenseTracker.data.model.ExpenseCategory;
 import africa.semicolon.expenseTracker.data.repository.ExpenseRepository;
 import africa.semicolon.expenseTracker.dto.request.CreateExpenseRequest;
+import africa.semicolon.expenseTracker.dto.request.DeleteRequest;
+import africa.semicolon.expenseTracker.dto.request.UpdateRequest;
 import africa.semicolon.expenseTracker.dto.response.ApiResponse;
 import africa.semicolon.expenseTracker.exceptions.ExpenseAlreadyExist;
+import africa.semicolon.expenseTracker.exceptions.ExpenseNotFoundException;
 import africa.semicolon.expenseTracker.service.ExpenseService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -44,15 +47,23 @@ public class ExpenseController {
 //            ExpenseCategory result = expenseRepository.save(expenseCategory);
 //            return ResponseEntity.created(new URI("/api/category" + result.getId())).body(result);
 //    }
-//    @PutMapping("/category/{id}")
-//    public ResponseEntity<ExpenseCategory> updateExpenseCategory(@Validated @RequestBody ExpenseCategory expenseCategory){
-//        //ExpenseCategory result = expenseCategoryRepository.save(expenseCategory);
-//        //return ResponseEntity.ok().body(result);
-//    }
-//    @DeleteMapping("/category/{id}")
-//    public ResponseEntity<?> deleteExpenseCategory(@PathVariable String id){
-//        expenseRepository.deleteById(id);
-//        return ResponseEntity.ok().build();
-//    }
+    @PostMapping("/update")
+    public ResponseEntity<?> updateExpense(@RequestBody UpdateRequest updateRequest){
+        try {
+            var expense = expenseService.updateExpense(updateRequest);
+            return new ResponseEntity<>(new ApiResponse(true, expense), OK);
+        }catch (ExpenseNotFoundException e){
+            return new ResponseEntity<>(new ApiResponse(false, e.getMessage()), BAD_REQUEST);
+        }
+    }
+    @DeleteMapping("/delete")
+    public ResponseEntity<?> deleteExpense(@RequestBody DeleteRequest deleteRequest) {
+        try{
+            var expense = expenseService.deleteExpense(deleteRequest);
+            return new ResponseEntity<>(new ApiResponse(true, expense), OK);
+        }catch(ExpenseNotFoundException e){
+            return new ResponseEntity<>(new ApiResponse(false, e.getMessage()), BAD_REQUEST);
+        }
+    }
 
 }

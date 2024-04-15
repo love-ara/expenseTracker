@@ -5,7 +5,9 @@ import africa.semicolon.expenseTracker.data.model.ExpenseCategory;
 import africa.semicolon.expenseTracker.data.repository.ExpenseRepository;
 import africa.semicolon.expenseTracker.data.repository.UserRepository;
 import africa.semicolon.expenseTracker.dto.request.CreateExpenseRequest;
+import africa.semicolon.expenseTracker.dto.request.DeleteRequest;
 import africa.semicolon.expenseTracker.dto.request.RegisterRequest;
+import africa.semicolon.expenseTracker.dto.request.UpdateRequest;
 import africa.semicolon.expenseTracker.dto.response.RegisterResponse;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -60,7 +62,45 @@ public class ExpenseServiceImplTest {
     }
 
     @Test
-    public void useCanHaveAListOfExpensesTest(){}
+    public void expenseCanBeUpdatedTest(){
+
+        CreateExpenseRequest createExpenseRequest = new CreateExpenseRequest();
+        createExpenseRequest.setDescription("Test Description");
+        createExpenseRequest.setExpenseCategory(ExpenseCategory.CLOTHING.name());
+        createExpenseRequest.setAmount(500.00);
+        createExpenseRequest.setUsername("Ara");
+        expenseService.createExpense(createExpenseRequest);
+        assertThat(expenseRepository.count(), is(1L));
+
+        UpdateRequest updateRequest = new UpdateRequest();
+        updateRequest.setId(expenseRepository.findAll().getFirst().getId());
+        updateRequest.setDescription("Test Description");
+        updateRequest.setExpenseCategory(ExpenseCategory.OTHER.name());
+        updateRequest.setAmount(500.00);
+        updateRequest.setUsername("Ara");
+        expenseService.updateExpense(updateRequest);
+        assertThat(expenseRepository.count(), is(1L));
+
+    }
+
+    @Test
+    public void expenseCanBeDeletedTest(){
+        CreateExpenseRequest createExpenseRequest = new CreateExpenseRequest();
+        createExpenseRequest.setDescription("Test Description");
+        createExpenseRequest.setExpenseCategory(ExpenseCategory.CLOTHING.name());
+        createExpenseRequest.setAmount(500.00);
+        createExpenseRequest.setUsername("Ara");
+        expenseService.createExpense(createExpenseRequest);
+
+        assertThat(expenseRepository.count(), is(1L));
+
+        DeleteRequest deleteRequest = new DeleteRequest();
+        deleteRequest.setUsername("ara");
+        deleteRequest.setId(expenseRepository.findAll().getFirst().getId());
+        expenseService.deleteExpense(deleteRequest);
+
+        assertThat(expenseRepository.count(), is(0L));
+    }
 
 
 }

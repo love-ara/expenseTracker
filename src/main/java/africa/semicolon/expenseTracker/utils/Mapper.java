@@ -1,9 +1,11 @@
 package africa.semicolon.expenseTracker.utils;
 
 import africa.semicolon.expenseTracker.data.model.Expense;
+import africa.semicolon.expenseTracker.data.model.ExpenseCategory;
 import africa.semicolon.expenseTracker.data.model.User;
 import africa.semicolon.expenseTracker.dto.request.*;
 import africa.semicolon.expenseTracker.dto.response.*;
+import africa.semicolon.expenseTracker.exceptions.ExpenseAlreadyExist;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -38,7 +40,7 @@ public class Mapper {
     public static Expense expenseMap(CreateExpenseRequest addExpenseRequest, User user) {
         Expense expense = new Expense();
         expense.setDescription(addExpenseRequest.getDescription());
-        //expense.setExpenseCategory(addExpenseRequest.getExpenseCategory());
+        expense.setExpenseCategory(ExpenseCategory.valueOf(addExpenseRequest.getExpenseCategory()));
         expense.setAmount(addExpenseRequest.getAmount());
         expense.setUser(user);
         //expense.setExpenseCategory(user.getExpenses().getFirst().getExpenseCategory());
@@ -72,5 +74,16 @@ public class Mapper {
         DeleteResponse deleteResponse = new DeleteResponse();
         deleteResponse.setId(deleteRequest.getId());
         return deleteResponse;
+    }
+    public static Expense updateMapper(UpdateRequest updateRequest, Expense expense){
+        expense.setDescription(updateRequest.getDescription());
+        expense.setExpenseCategory(ExpenseCategory.valueOf(String.valueOf(updateRequest.getExpenseCategory())));
+        expense.setAmount(updateRequest.getAmount());
+        return expense;
+    }
+    public static UpdateResponse updateMap(UpdateRequest updateRequest){
+        UpdateResponse updateResponse = new UpdateResponse();
+        updateResponse.setId(updateRequest.getId());
+        return updateResponse;
     }
 }

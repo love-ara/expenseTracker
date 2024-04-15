@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05a86a36-79b4-40b8-8a4a-ec1f6945d94c" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/controller/ExpenseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/response/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/exceptions/ExpenseAlreadyExist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diagram/ExpenseTracker_class Diagram-Page-1.drawio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diagram/ExpenseTracker_use-case-Page-2.drawio - Copy.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/controller/ExpenseCategoryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/controller/ExpenseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/controller/ExpenseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/request/UpdateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/request/UpdateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/response/UpdateResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/dto/response/UpdateResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/service/ExpenseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/service/ExpenseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/service/ExpenseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/service/ExpenseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/utils/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/expenseTracker/utils/Mapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/africa/semicolon/expenseTracker/service/ExpenseServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/expenseTracker/service/ExpenseServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,46 +53,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.ExpenseServiceImplTest.createAnExpenseTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ExpenseServiceImplTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ExpenseServiceTest.createAnExpenseTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ExpenseServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserServiceImplTest.RegisterUserTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserServiceImplTest.deleteFromExpenseList.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserServiceImplTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserServiceImplTest.userCanLogExpenseTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserServiceImplTest.userLoginTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserServiceImplTest.userLogoutTest.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ExpenseTracker.executor&quot;: &quot;Run&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.ExpenseServiceImplTest.createAnExpenseTest.executor": "Run",
+    "JUnit.ExpenseServiceImplTest.executor": "Run",
+    "JUnit.ExpenseServiceImplTest.expenseCanBeDeletedTest.executor": "Run",
+    "JUnit.ExpenseServiceImplTest.expenseCanBeUpdatedTest.executor": "Run",
+    "JUnit.ExpenseServiceTest.createAnExpenseTest.executor": "Run",
+    "JUnit.ExpenseServiceTest.executor": "Run",
+    "JUnit.UserServiceImplTest.RegisterUserTest.executor": "Run",
+    "JUnit.UserServiceImplTest.deleteFromExpenseList.executor": "Run",
+    "JUnit.UserServiceImplTest.executor": "Run",
+    "JUnit.UserServiceImplTest.userCanLogExpenseTest.executor": "Run",
+    "JUnit.UserServiceImplTest.userLoginTest.executor": "Run",
+    "JUnit.UserServiceImplTest.userLogoutTest.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ExpenseTracker.executor": "Run",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Administrator/IdeaProjects/expenseTracker/diagram",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="africa.semicolon.expenseTracker.exceptions" />
       <recent name="africa.semicolon.expenseTracker.dto.response" />
       <recent name="africa.semicolon.expenseTracker.dto" />
       <recent name="africa.semicolon.expenseTracker.dto.request" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\IdeaProjects\expenseTracker\diagram" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -98,8 +110,8 @@
       <recent name="africa.semicolon.expenseTracker.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceImplTest.deleteFromExpenseList">
-    <configuration name="UserServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ExpenseServiceImplTest">
+    <configuration name="ExpenseServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="expenseTracker" />
       <extension name="coverage">
         <pattern>
@@ -108,8 +120,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="africa.semicolon.expenseTracker.service" />
-      <option name="MAIN_CLASS_NAME" value="africa.semicolon.expenseTracker.service.UserServiceImplTest" />
+      <option name="MAIN_CLASS_NAME" value="africa.semicolon.expenseTracker.service.ExpenseServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpenseServiceImplTest.expenseCanBeDeletedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="expenseTracker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="africa.semicolon.expenseTracker.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="africa.semicolon.expenseTracker.service" />
+      <option name="MAIN_CLASS_NAME" value="africa.semicolon.expenseTracker.service.ExpenseServiceImplTest" />
+      <option name="METHOD_NAME" value="expenseCanBeDeletedTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpenseServiceImplTest.expenseCanBeUpdatedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="expenseTracker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="africa.semicolon.expenseTracker.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="africa.semicolon.expenseTracker.service" />
+      <option name="MAIN_CLASS_NAME" value="africa.semicolon.expenseTracker.service.ExpenseServiceImplTest" />
+      <option name="METHOD_NAME" value="expenseCanBeUpdatedTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -130,38 +174,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceImplTest.userCanLogExpenseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="expenseTracker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="africa.semicolon.expenseTracker.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="africa.semicolon.expenseTracker.service" />
-      <option name="MAIN_CLASS_NAME" value="africa.semicolon.expenseTracker.service.UserServiceImplTest" />
-      <option name="METHOD_NAME" value="userCanLogExpenseTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceImplTest.userLoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="expenseTracker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="africa.semicolon.expenseTracker.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="africa.semicolon.expenseTracker.service" />
-      <option name="MAIN_CLASS_NAME" value="africa.semicolon.expenseTracker.service.UserServiceImplTest" />
-      <option name="METHOD_NAME" value="userLoginTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ExpenseTracker" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="expenseTracker" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="africa.semicolon.expenseTracker.ExpenseTracker" />
@@ -177,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserServiceImplTest.deleteFromExpenseList" />
+        <item itemvalue="JUnit.ExpenseServiceImplTest" />
+        <item itemvalue="JUnit.ExpenseServiceImplTest.expenseCanBeUpdatedTest" />
+        <item itemvalue="JUnit.ExpenseServiceImplTest.expenseCanBeDeletedTest" />
         <item itemvalue="Spring Boot.ExpenseTracker" />
-        <item itemvalue="JUnit.UserServiceImplTest" />
-        <item itemvalue="JUnit.UserServiceImplTest.userCanLogExpenseTest" />
-        <item itemvalue="JUnit.UserServiceImplTest.userLoginTest" />
+        <item itemvalue="JUnit.UserServiceImplTest.deleteFromExpenseList" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +214,8 @@
       <workItem from="1713080890267" duration="7200000" />
       <workItem from="1713088125968" duration="7710000" />
       <workItem from="1713107116535" duration="9957000" />
-      <workItem from="1713156042289" duration="1872000" />
+      <workItem from="1713156042289" duration="4004000" />
+      <workItem from="1713163154907" duration="3000000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -572,7 +585,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713117619094</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="commit">
+      <option name="closed" value="true" />
+      <created>1713158567144</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1713158567144</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

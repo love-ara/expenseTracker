@@ -6,8 +6,10 @@ import africa.semicolon.expenseTracker.data.repository.ExpenseRepository;
 import africa.semicolon.expenseTracker.data.repository.UserRepository;
 import africa.semicolon.expenseTracker.dto.request.CreateExpenseRequest;
 import africa.semicolon.expenseTracker.dto.request.DeleteRequest;
+import africa.semicolon.expenseTracker.dto.request.UpdateRequest;
 import africa.semicolon.expenseTracker.dto.response.CreateExpenseResponse;
 import africa.semicolon.expenseTracker.dto.response.DeleteResponse;
+import africa.semicolon.expenseTracker.dto.response.UpdateResponse;
 import africa.semicolon.expenseTracker.exceptions.ExpenseNotFoundException;
 import africa.semicolon.expenseTracker.exceptions.UsernameNotFoundException;
 import lombok.AllArgsConstructor;
@@ -35,6 +37,14 @@ public class ExpenseServiceImpl implements ExpenseService{
         Expense expense = findExpense(deleteRequest.getId());
         expenseRepository.delete(expense);
         return deleteMap(deleteRequest);
+    }
+
+    @Override
+    public UpdateResponse updateExpense(UpdateRequest updateExpenseRequest) {
+        Expense expense = findExpense(updateExpenseRequest.getId());
+        var updated = updateMapper(updateExpenseRequest, expense);
+        expenseRepository.save(updated);
+        return updateMap(updateExpenseRequest);
     }
 
     private Expense findExpense(String id) {
